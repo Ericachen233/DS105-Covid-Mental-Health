@@ -1,14 +1,31 @@
-# DS105-Covid-Mental-Health
-Executive summary:
-Motivation
-Data
-Brief outlook of methods
-Results
-Conclusions.
-Motivation for your project; i.e., why were you interested in the topic chosen?
-Justification: why is your project relevant?
-Aim. Be sure of making crystal clear what was your aim with the data analyses. 
-Data. What data sources did you use? Be sure of being presenting a thorough description of data sources. (not only include URLs but a line or two on what is the data source). How many data points did you gather? Descriptive statistics of your data.
-Methodology. How did you analysed the data? What tools did you use? 
-Results. What are the findings of your analysis?
-Conclusion. 
+# Impact of COVID-19 on Mental Health - Executive Summary
+
+## Motivation: 
+We were particularly interested in exploring the research question “What was the impact of the COVID-19 pandemic on mental health discourse?” since the topic of mental health is not only extremely important but also close to our hearts. For example, the proposer of the topic studies psychology as her degree at university and also volunteers as a content creator for a social media site dealing with the mental health of high schoolers. Additionally, through our day-to-day experiences, we saw an interesting duality in the way the pandemic affected the discourse surrounding this topic. On one hand, we saw that this was clearly a rather distressing time for many people with the pandemic having a number of negative consequences such as job loss, death of loved ones, anxiety about one’s own health, isolation, etc. On the other hand, it seemed to us that since the pandemic affected everyone’s mental health in some way, that more people were paying attention to it and so there was a larger amount of mental health discourse happening than before the pandemic. This also lead to our hypothesis which predicted that we would find more discourse surrounding mental health after the pandemic hit but that it would also be more negative overall.
+
+## Justification
+
+## Aim
+
+## Data
+
+## Methodology: 
+The visualization of our data had the form of an interactive bubble chart and was made in R using the “plotly” library. This library allows for the creation of dynamic graphs which seemed to us as the perfect way to highlight how our data changes between the different time periods. First, we put all of the relevant data into a data frame in the form of lists, this included a list for each of: keywords according to which we analyzed the data, the time period from which the given data point originated, the average valence of the Tweets containing a given keyword, the valence of each of the keywords and the number of Tweets containing each keyword. Each of these lists was then captured in the bubble chart in a different way.
+
+Each keyword that we analyzed had its own bubble of a distinct color with the size of the bubble representing the number of Tweets containing that keyword. The x-axis represents the average valence (positive or negative) of Tweets containing a given keyword while the y-axis represents the valence (positive or negative) of each of the individual keywords. Finally, the three different time periods from which we analyzed Tweets are captured via a slider that can either be manually changed or automatically played through the three time points. The viewer can also choose to display only a certain subset of keywords at a given time by selecting the ones that should not be displayed in the legend. By hovering over each of the bubbles, exact information about that particular keyword will be displayed.
+
+## Results: 
+Our results showed that people talked about mental health less and more positively after the pandemic hit. This went against our original expectations and at first glance seemed rather counter-intuitive. However, when we looked more closely at the data we noticed there was also a qualitative shift in the way that people spoke about mental health. The keywords that were the most used before the pandemic relative to the other time points were ‘depressed’, ‘anxious’, ‘stressed out’ and ‘therapy’. Since these are words predominantly connected to mental health illnesses or problems we can conclude that mental health discourse before the pandemic was dominated by people affected by such problems. However, in the mid-pandemic data set the keywords ‘mental health’ and ‘well-being’ were the most used relative to the other time points. These are more neutral terms that signify a shift towards talking about mental health in a more general manner. As the pandemic progressed and more people were affected, the topic of mental health became more relevant and therefore important to a wider group of people. In the post-pandemic data set, ‘self care’ and ‘self love’ were the most and second most used relative to the other time points. This signifies a further shift in the mental health discourse towards focusing on more positive aspects of mental health. It shows that as the pandemic went on and it was really taking a toll on people’s mental health they increasingly turned towards taking care of themselves.
+
+Our data collection and analysis process was not without fault since the data set we were working with was not necessarily representative. We were limited by what people share on social media, specifically Twitter. This is in turn limited by Twitter’s user base which is younger, more educated and higher-earning than the average population (Wojick & Hughes, 2019). Additionally, due to the way our data was retrieved all of the Tweets are from around midnight. It is possible that the time of day can affect people’s mental health. Both of these biases in our sample could have affected our results and therefore we believe further research should be carried out in this area which would draw on a different source of data to solve the former problem or use a different method of extracting Tweets to solve the latter problem. We also had to choose keywords according to which we would retrieve the Tweets which is a rather arbitrary process that can also bias the data set. However, we did try to counteract this at least to some extent by choosing a set of keywords rather than just one and also choosing an approximately equal number of keywords with negative, positive and neutral valence in order to try to capture a wider range of mental health discourse. Finally, since our method of extracting Tweets was not ideal there were some Tweets which were not in English or did not seem to contain any of the specified keywords. Future work in this area should try to avoid these mistakes.
+
+However, we believe the abovementioned caveats merely mean that our findings should be taken with a grain of salt, they do not signify that the story captured by our data is not accurate or powerful. Our research is especially important because it sheds light on an area that has not been thoroughly investigated yet because of its recency. Nevertheless, our findings are supported by research claiming that most people remain resilient and can even find new strengths following disasters (Pfefferbaum & North, 2020) and that Twitter can empower its users and contribute to their resilience in such situations (Beedasy et al, 2020).
+
+## Conclusion: 
+Although our project did not confirm the hypothesis with which we went into it, it provided great insight into the way people responded to the pandemic in terms of mental health. Instead of further spreading their negative mental health states on social media they focused on positivity and building resilience towards the growing amount of negative influences that were coming at them from the outside. These results tells an inspiring story of the ability of humans to survive and to some extent even thrive in whatever conditions life throws at them.
+
+### BIBLIOGRAPHY
+Beedasy, J., Samur Zuñiga, A. F., Chandler, T., & Slack, T. (2020). Online Community Discourse During the Deepwater Horizon Oil Spill: An Analysis of Twitter Interactions. International Journal of Disaster Risk Reduction, 51(101870). doi:10.1016/j.ijdrr.2020.101870
+Pfefferbaum, B., & North, C. S. (2020). Mental Health and the Covid-19 Pandemic. The New England Journal of Medicine, 383(6), 510-512. doi:10.1056/NEJMp2008017
+Wojcik, S., & Hughes, A. (2019). Sizing Up Twitter Users. Pew Research Center. https://www.pewresearch.org/internet/2019/04/24/sizing-up-twitter-users/
+
