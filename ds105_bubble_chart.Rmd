@@ -1,0 +1,41 @@
+---
+title: ''
+output:
+  html_document: 
+    df_print: paged
+---
+```{r}
+library("ggplot2")
+library("plotly")
+```
+
+
+```{r}
+df <- structure(list(Keyword = c(
+  "depressed", "anxious","stressed out", "mental health", "therapy", "well-being", "self care", "self love", "depressed", "anxious", "stressed out", "mental health", "therapy", "well-being", "self care", "self love", "depressed", "anxious", "stressed out", "mental health", "therapy", "well-being", "self care", "self love"
+), 
+Time = c("before pandemic", "during pandemic","late pandemic","before pandemic", "during pandemic","late pandemic","before pandemic", "during pandemic","late pandemic","before pandemic", "during pandemic","late pandemic","before pandemic", "during pandemic","late pandemic","before pandemic", "during pandemic","late pandemic","before pandemic", "during pandemic","late pandemic","before pandemic", "during pandemic","late pandemic"),
+Tweet_Valence = c(-2.33, -2.07, 0.06, 0.59, 0.44, 2.73, 2.49, 3.37, -2.28, -2.06, 0.32, 0.37, 0.44, 2.98, 2.35, 3.78, -2.9, -2.02, 0.16, 0.51, 0.39, 3.05, 2.35, 3.01), 
+Individual_Valence = c( -2, -2, -2, 0, 0, 2, 2, 2, -2, -2, -2, 0, 0, 2, 2, 2, -2, -2, -2, 0, 0, 2, 2, 2
+), 
+Amount = c(30070, 22517, 8214, 61341, 40293, 4319, 3044, 4223, 27740, 20096, 7318, 76214, 40145, 4186, 2075, 5039, 24945, 14197, 5164, 57768, 37155, 5734, 2591, 2679)), class = "data.frame", row.names = c(NA, 24))
+
+Bound <- 0.6
+y_high <- max(df$Individual_Valence) + Bound
+   y_low <- min(df$Individual_Valence) - Bound
+
+x_high <-max(df$Tweet_Valence) + Bound
+x_low <- min(df$Tweet_Valence) - Bound
+
+plot <- ggplot(df, aes(x = Tweet_Valence, y = Individual_Valence, size = Amount, color = Keyword, frame = Time)) +
+  geom_point(alpha = 0.2) +
+  scale_size(range = c(0, 30)) +
+  scale_y_continuous(limits = c(y_low,y_high)) +
+  scale_x_continuous(limits = c(x_low,x_high))
+ 
+
+fig <- ggplotly(plot)
+fig
+
+
+``` 
