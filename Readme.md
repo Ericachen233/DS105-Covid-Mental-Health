@@ -9,7 +9,9 @@
 
 
  ## Aim: 
- Our aim is to find the influence of the pandemic on people’s discourse about mental health on Twitter. More specifically, we aim to find whether discussion about mental health on Twitter had been negatively influenced by covid, and we would like to visualize the influence of the pandemic and show it in an understandable way.  
+ Our aim is to find the influence of the pandemic on people’s discourse about mental health on Twitter. More specifically, we aim to tell a coherent story about how Twitter users’ mental health had been affected by the pandemic and we would like to visualize the influence of the pandemic and show it in an understandable way.  
+
+
 
 
  ## Data
