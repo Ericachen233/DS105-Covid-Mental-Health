@@ -4,7 +4,8 @@
  We were particularly interested in exploring the research question “What was the impact of the COVID-19 pandemic on mental health discourse?” since the topic of mental health is not only extremely important but also close to our hearts. For example, the proposer of the topic studies psychology as her degree at university and also volunteers as a content creator for a social media site dealing with the mental health of high schoolers. Additionally, through our day-to-day experiences, we saw an interesting duality in the way the pandemic affected the discourse surrounding this topic. On one hand, we saw that this was clearly a rather distressing time for many people with the pandemic having a number of negative consequences such as job loss, death of loved ones, anxiety about one’s own health, isolation, etc. On the other hand, it seemed to us that since the pandemic affected everyone’s mental health in some way, that more people were paying attention to it and so there was a larger amount of mental health discourse happening than before the pandemic. This also lead to our hypothesis which predicted that we would find more discourse surrounding mental health after the pandemic hit but that it would also be more negative overall.
 
  ## Justification:
- 
+ Mental health is relevant to every human being living in this world. With the hit of the pandemic, people have been more likely to fall under the influence of depression and anxiety, and some chose to share their emotions on Twitter to ask for help or just to feel better. By better understanding the pandemic’s influence on Twitter users, mental health practitioners could provide more relevant  information and modify their methodology to suit people’s needs. For example, if it is found that the pandemic caused an increase in people’s interest in self-care, mental health practitioners can seize the opportunity and provide relevant information that would interest the audience. 
+
 
  ## Aim
 
